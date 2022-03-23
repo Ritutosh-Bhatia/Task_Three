@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'password.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -95,22 +96,23 @@ class SignUpPage extends StatelessWidget {
                       const SizedBox(
                         height: 25,
                       ),
-                      const TextField(
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          alignLabelWithHint: true,
-                          labelText: "Password",
-                          hintText: "aaaaaaaaa",
-                          prefixIcon: Icon(Icons.lock_rounded),
-                          suffixIcon: Icon(Icons.visibility_off),
-                          contentPadding:
-                              EdgeInsets.symmetric(vertical: 0, horizontal: 10),
-                          enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.grey)),
-                          border: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.grey)),
-                        ),
-                      ),
+                      LoginForm(),
+                      // const TextField(
+                      //   obscureText: true,
+                      //   decoration: InputDecoration(
+                      //     alignLabelWithHint: true,
+                      //     labelText: "Password",
+                      //     hintText: "aaaaaaaaa",
+                      //     prefixIcon: Icon(Icons.lock_rounded),
+                      //     suffixIcon: Icon(Icons.visibility_off),
+                      //     contentPadding:
+                      //         EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+                      //     enabledBorder: OutlineInputBorder(
+                      //         borderSide: BorderSide(color: Colors.grey)),
+                      //     border: OutlineInputBorder(
+                      //         borderSide: BorderSide(color: Colors.grey)),
+                      //   ),
+                      // ),
                       const SizedBox(
                         height: 25,
                       ),
