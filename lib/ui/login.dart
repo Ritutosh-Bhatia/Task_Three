@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'password.dart';
+
 
 class LogInPage extends StatelessWidget {
   const LogInPage({Key? key}) : super(key: key);
@@ -78,22 +80,23 @@ class LogInPage extends StatelessWidget {
                       const SizedBox(
                         height: 25,
                       ),
-                      const TextField(
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          alignLabelWithHint: true,
-                          labelText: "Password",
-                          hintText: "aaaaaaaa",
-                          prefixIcon: Icon(Icons.lock_rounded),
-                          suffixIcon: Icon(Icons.visibility),
-                          contentPadding:
-                              EdgeInsets.symmetric(vertical: 0, horizontal: 10),
-                          enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.grey)),
-                          border: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.grey)),
-                        ),
-                      ),
+                      LoginForm(),
+                      // const TextField(
+                      //   obscureText: true,
+                      //   decoration: InputDecoration(
+                      //     alignLabelWithHint: true,
+                      //     labelText: "Password",
+                      //     hintText: "aaaaaaaa",
+                      //     prefixIcon: Icon(Icons.lock_rounded),
+                      //     suffixIcon: Icon(Icons.visibility),
+                      //     contentPadding:
+                      //         EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+                      //     enabledBorder: OutlineInputBorder(
+                      //         borderSide: BorderSide(color: Colors.grey)),
+                      //     border: OutlineInputBorder(
+                      //         borderSide: BorderSide(color: Colors.grey)),
+                      //   ),
+                      // ),
                       SizedBox(
                         height: 20,
                       ),
